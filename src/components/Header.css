@@ -1,0 +1,54 @@
+/* src/components/Header.css */
+.app-header {
+  background-color: #28a745; /* Verde aquático */
+  padding: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Para telas menores */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.app-header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.main-nav li a:hover {
+  color: #d1ecf1; /* Um azul claro para hover */
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

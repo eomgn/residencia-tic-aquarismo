@@ -1,0 +1,92 @@
+/* src/pages/HomePage.css */
+.home-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-section {
+  background-color: #e0f7fa; /* Azul claro */
+  padding: 60px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section h2 {
+  font-size: 3em;
+  color: #007bff; /* Azul vibrante */
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.3em;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff; /* Azul */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 50px; /* Botão arredondado */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+  transform: translateY(-2px);
+}
+
+.info-cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.info-card h3 {
+  color: #28a745; /* Verde */
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 2em;
+  }
+  .hero-section p {
+    font-size: 1em;
+  }
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+  .info-cards-section {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
+}

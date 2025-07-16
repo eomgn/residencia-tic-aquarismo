@@ -1,0 +1,14 @@
+/* src/components/Footer.css */
+.app-footer {
+  background-color: #343a40; /* Cinza escuro */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Empurra o footer para baixo */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}

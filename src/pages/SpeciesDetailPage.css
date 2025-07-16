@@ -1,0 +1,126 @@
+/* src/pages/SpeciesDetailPage.css */
+.species-detail-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.species-detail-page .back-button {
+  background-color: #6c757d; /* Cinza */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.species-detail-page .back-button:hover {
+  background-color: #5a6268;
+}
+
+.species-detail-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  flex-wrap: wrap; /* Permite que os elementos quebrem em telas pequenas */
+}
+
+.species-detail-image {
+  width: 300px; /* Largura fixa da imagem */
+  height: 300px; /* Altura fixa da imagem */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+.species-info {
+  flex-grow: 1; /* Permite que a seção de informações ocupe o espaço restante */
+  min-width: 300px; /* Garante que não fique muito pequeno */
+}
+
+.species-info h2 {
+  font-size: 2.5em;
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.species-info .scientific-name {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.species-info .description {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.info-section {
+  margin-bottom: 25px;
+}
+
+.info-section h3 {
+  font-size: 1.6em;
+  color: #28a745; /* Verde */
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-section li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.info-section li strong {
+  color: #000;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .species-detail-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .species-detail-image {
+    width: 100%;
+    height: auto; /* Permite que a altura se ajuste */
+  }
+  .species-info {
+    min-width: unset; /* Remove o min-width em telas pequenas */
+    width: 100%; /* Ocupa toda a largura */
+  }
+  .species-info h2 {
+    font-size: 2em;
+  }
+  .species-detail-page {
+    padding: 15px;
+    margin: 15px auto;
+  }
+}
+
+.species-detail-page.not-found {
+  text-align: center;
+  padding: 50px;
+}
+
+.species-detail-page.not-found h2 {
+  color: #dc3545; /* Vermelho */
+  margin-bottom: 20px;
+}
