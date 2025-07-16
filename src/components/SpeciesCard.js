@@ -1,5 +1,3 @@
-// src/components/SpeciesCard.js
-import React from "react";
 import { Link } from "react-router-dom";
 import "./SpeciesCard.css";
 

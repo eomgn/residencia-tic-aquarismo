@@ -1,5 +1,3 @@
-// src/components/Header.js
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -15,10 +13,10 @@ function Header() {
             <Link to="/species">Espécies</Link>
           </li>
           <li>
-            <Link to="/species">Acessórios</Link>
+            <Link to="/acessories">Acessórios</Link>
           </li>
           <li>
-            <Link to="/species">Carrinho</Link>
+            <Link to="/cart">Carrinho</Link>
           </li>
           <li>
             <Link to="/guides">Guias</Link>

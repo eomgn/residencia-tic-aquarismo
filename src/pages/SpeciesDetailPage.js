@@ -1,5 +1,3 @@
-// src/pages/SpeciesDetailPage.js
-import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import fishData from "../data/fishData"; // Importa os dados
 import "./SpeciesDetailPage.css";
